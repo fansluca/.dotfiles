@@ -1,0 +1,27 @@
+[cache]
+languages = ["en", "zh"]
+
+[output]
+platform_title = true
+show_hyphens = true
+
+[style.title]
+color = { rgb = [238, 153, 160] }
+
+[style.description]
+color = { rgb = [238, 153, 160] }
+
+[style.bullet]
+color = { rgb = [166, 218, 149] }
+
+[style.example]
+color = { rgb = [145, 215, 227] }
+
+[style.url]
+color = { rgb = [237, 135, 150] }
+
+[style.inline_code]
+color = { rgb = [238, 212, 159] }
+
+[style.placeholder]
+color = { rgb = [237, 135, 150] }
