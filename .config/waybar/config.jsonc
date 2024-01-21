@@ -165,8 +165,8 @@
   },
   "cpu": {
     "interval": 10,
-    "format-alt": "",
-    "format": "{usage}% ",
+    "format-alt": "󰍛",
+    "format": "{usage}% 󰍛",
     "format-alt-click": "click-right",
     "on-click": "kitty --title btop sh -c 'btop'",
     "states": {
@@ -176,8 +176,8 @@
   },
   "memory": {
     "interval": 30,
-    "format-alt": "󰍛",
-    "format": "{}% 󰍛",
+    "format-alt": "",
+    "format": "{}% ",
     "format-alt-click": "click-right",
     "on-click": "kitty --title btop sh -c 'btop'",
     "states": {
