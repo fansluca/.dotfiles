@@ -1,0 +1,66 @@
+{
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.fontFamily": "monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "bold",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+  "files.autoGuessEncoding": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "recentlyUsed",
+  "window.dialogStyle": "custom",
+  "debug.showBreakpointsInOverviewRuler": true,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.tree.enableStickyScroll": true,
+  "catppuccin.extraBordersEnabled": true,
+  "rust-analyzer.imports.granularity.group": "module",
+  "[rust]":{
+      "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  },
+  "editor.find.autoFindInSelection": "multiline",
+}
