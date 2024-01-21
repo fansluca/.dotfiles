@@ -81,3 +81,5 @@ alias gitui='gitui -t macchiato.ron'
 alias gitdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # gitui
 alias gituidot='/usr/bin/gitui -t macchiato.ron --directory=$HOME/.dotfiles/ --workdir=$HOME'
+# lazygit
+alias lazygitdot='/usr/bin/lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
