@@ -1,3 +1,5 @@
+!config.fish
 !/conf.d/
 !/conf.d/alias.fish
-!config.fish
+!/functions/
+!/functions/fish_greeting.fish
