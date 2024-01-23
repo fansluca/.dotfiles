@@ -67,7 +67,6 @@ alias tree='eza --time-style=iso --icons --tree --level 3'
 alias cman="env LANG=zh_CN.UTF-8 man"
 
 alias vim='nvim'
-alias cat='bat'
 alias more='less'
 alias find='fd'
 alias df='duf'
