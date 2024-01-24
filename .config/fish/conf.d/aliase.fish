@@ -52,11 +52,32 @@ end
 alias pb 'curl -F "c=@-" "https://fars.ee/"'
 
 # mv, rm, cp
-# alias mv 'command gmv --interactive --verbose'
-# alias rm 'command grm --interactive --verbose'
-# alias cp 'command gcp --interactive --verbose'
-
-alias chmox='chmod +x'
+# alias mv 'command mv --interactive --verbose'
+# alias rm 'command rm --interactive --verbose'
+# alias cp 'command cp --interactive --verbose'
+#
+# Pacman aliases and functions
+alias Syu="sudo pacman -Syu"
+alias Rcs="sudo pacman -Rcs"
+alias Rs="sudo pacman -Rs"
+alias Ss="pacman -Ss"
+alias Si="pacman -Si"
+alias Sl="pacman -Sl"
+alias Sg="pacman -Sg"
+alias Qs="pacman -Qs"
+alias Qi="pacman -Qi"
+alias Qo="pacman -Qo"
+alias Ql="pacman -Ql"
+alias Qlp="pacman -Qlp"
+alias Qm="pacman -Qm"
+alias Qn="pacman -Qn"
+alias U="sudo pacman -U"
+alias F="pacman -F"
+alias Fo="pacman -F"
+alias Fs="pacman -F"
+alias Fl="pacman -Fl"
+alias Fy="sudo pacman -Fy"
+alias Sy="sudo pacman -Sy"
 
 alias ls='eza --time-style=iso --icons'
 alias ll='eza --time-style=iso --icons --long --header'
