@@ -1,3 +1,7 @@
 [user]
 	name = NAME
 	email = witherslove@gmail.com
+[help]
+	autoCorrect = prompt
+[core]
+	autocrlf = input
