@@ -99,4 +99,4 @@ alias gitdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # gitui
 alias gituidot='/usr/bin/gitui -t macchiato.ron --directory=$HOME/.dotfiles/ --workdir=$HOME'
 # lazygit
-alias lazygitdot='LANG=zh_CN.UTF-8 /usr/bin/lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias lazygitdot='/usr/bin/lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
