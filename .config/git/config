@@ -5,3 +5,6 @@
 	autoCorrect = prompt
 [core]
 	autocrlf = input
+	editor = nvim
+[color]
+	ui = true
