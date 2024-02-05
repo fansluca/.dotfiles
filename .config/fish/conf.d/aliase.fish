@@ -85,7 +85,7 @@ alias la='eza --time-style=iso --icons --long --header --all'
 alias lg='eza --time-style=iso --icons --long --header --all --git'
 alias tree='eza --time-style=iso --icons --tree --level 3'
 
-alias cman="env LANG=zh_CN.UTF-8 man"
+alias cman="LANG=zh_CN.UTF-8 man"
 
 alias vim='nvim'
 alias more='less'
