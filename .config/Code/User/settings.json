@@ -59,8 +59,9 @@
   "workbench.tree.enableStickyScroll": true,
   "catppuccin.extraBordersEnabled": true,
   "rust-analyzer.imports.granularity.group": "module",
-  "[rust]":{
-      "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "editor.find.autoFindInSelection": "multiline",
+  "editor.find.autoFindInSelection": "multiline"
 }
+
