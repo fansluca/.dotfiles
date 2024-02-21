@@ -19,6 +19,109 @@ prepend_previewers = [
   { name = NAME
   { mime = "audio/*", exec = "exifaudio" },
   { mime = "text/csv", exec = "miller_csv" },
-  { mime = "application/json", exec = "miller_json" },
 ]
 append_previewers = [{ mime = "*", exec = "hexyl" }]
+
+
+[opener]
+edit = [
+  { exec = '$EDITOR "$@"', block = true },
+  { exec = 'code "$@"', orphan = true },
+]
+open = [{ exec = 'xdg-open "$@"', desc = "Open", for = "linux" }]
+reveal = [
+  { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
+]
+extract = [{ exec = 'unar "$1"', desc = "Extract here", for = "unix" }]
+archive = [{ exec = 'unar "$1"', desc = "Extract here" }]
+play = [
+  { exec = 'mpv "$@"', orphan = true, for = "unix" },
+  { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
+]
+image = [{ exec = 'imv "$1"', desc = "view image" }]
+
+[open]
+rules = [
+  { name = NAME
+    "edit",
+    "open",
+    "reveal",
+  ] },
+
+  { mime = "text/*", use = [
+    "edit",
+    "reveal",
+  ] },
+  { mime = "image/*", use = [
+    "image",
+    "open",
+    "reveal",
+  ] },
+  { mime = "video/*", use = [
+    "play",
+    "reveal",
+  ] },
+  { mime = "audio/*", use = [
+    "play",
+    "reveal",
+  ] },
+  { mime = "inode/x-empty", use = [
+    "edit",
+    "reveal",
+  ] },
+
+  { mime = "application/json", use = [
+    "edit",
+    "reveal",
+  ] },
+  { mime = "*/javascript", use = [
+    "edit",
+    "reveal",
+  ] },
+
+  { mime = "application/zip", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/gzip", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/x-tar", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/x-bzip", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/x-bzip2", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/x-7z-compressed", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/x-rar", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+  { mime = "application/xz", use = [
+    "extract",
+    "reveal",
+    "archive",
+  ] },
+
+  { mime = "*", use = [
+    "open",
+    "reveal",
+  ] },
+]
