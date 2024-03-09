@@ -20,4 +20,5 @@
 !code-flags.conf
 !chromium-flags.conf
 !chrome-flags.conf
+!electron-flags.conf
 !starship.toml

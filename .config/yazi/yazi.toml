@@ -8,6 +8,7 @@ sort_by = "natural"
 sort_reverse = false
 sort_dir_first = true
 linemode = "size"
+scrolloff = 5
 
 [preview]
 tab_size = 2

@@ -37,23 +37,25 @@ function Manager:render(area)
 	})
 end
 
-function Header:host()
-	if ya.target_family() ~= "unix" then
-		return ui.Line({}) -- No host information for non-Unix systems
-	end
-	return ui.Span(ya.user_name() .. "@" .. ya.host_name() .. ":"):fg("blue")
-end
-
-function Header:render(area)
-	local chunks = self:layout(area)
-
-	local left = ui.Line({ self:host(), self:cwd() }) -- Include host information
-	local right = ui.Line({ self:tabs() })
-	return {
-		ui.Paragraph(chunks[1], { left }),
-		ui.Paragraph(chunks[2], { right }):align(ui.Paragraph.RIGHT),
-	}
-end
+-- function Header:host()
+-- 	if ya.target_family() ~= "unix" then
+-- 		return ui.Line({}) -- No host information for non-Unix systems
+-- 	end
+-- 	return ui.Span(ya.user_name() .. "@" .. ya.host_name() .. ":"):fg("blue")
+-- end
+--
+-- function Header:render(area)
+-- 	local chunks = self:layout(area)
+--
+-- 	local left = ui.Line({ self:host(), self:cwd() }) -- Include host information
+-- 	local right = ui.Line({ self:tabs() })
+-- 	return {
+-- 		ui.Paragraph(chunks[1], { left }),
+-- 		ui.Paragraph(chunks[2], { right }):align(ui.Paragraph.RIGHT),
+-- 	}
+-- end
+--
+require("starship"):setup()
 
 function Status:owner()
 	local h = cx.active.current.hovered
