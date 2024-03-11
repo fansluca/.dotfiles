@@ -18,28 +18,28 @@ max_height = 1000
 [plugin]
 prepend_previewers = [
   { name = NAME
-  { mime = "audio/*", exec = "exifaudio" },
-  { mime = "text/csv", exec = "miller_csv" },
+  { mime = "audio/*", run = "exifaudio" },
+  { mime = "text/csv", run = "miller_csv" },
 ]
-append_previewers = [{ mime = "*", exec = "hexyl" }]
+append_previewers = [{ mime = "*", run = "hexyl" }]
 
 
 [opener]
 edit = [
-  { exec = '$EDITOR "$@"', block = true },
-  { exec = 'code "$@"', orphan = true },
+  { run = '$EDITOR "$@"', block = true },
+  { run = 'code "$@"', orphan = true },
 ]
-open = [{ exec = 'xdg-open "$@"', desc = "Open", for = "linux" }]
+open = [{ run = 'xdg-open "$@"', desc = "Open", for = "linux" }]
 reveal = [
-  { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
+  { run = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
 ]
-extract = [{ exec = 'unar "$1"', desc = "Extract here", for = "unix" }]
-archive = [{ exec = 'unar "$1"', desc = "Extract here" }]
+extract = [{ run = 'unar "$1"', desc = "Extract here", for = "unix" }]
+archive = [{ run = 'unar "$1"', desc = "Extract here" }]
 play = [
-  { exec = 'mpv "$@"', orphan = true, for = "unix" },
-  { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
+  { run = 'mpv "$@"', orphan = true, for = "unix" },
+  { run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
 ]
-image = [{ exec = 'imv "$1"', desc = "view image" }]
+image = [{ run = 'imv "$1"', desc = "view image" }]
 
 [open]
 rules = [

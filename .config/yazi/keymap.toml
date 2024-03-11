@@ -4,8 +4,8 @@
 prepend_keymap = [
   { on = [
     "<Esc>",
-  ], exec = "escape", desc = "Exit visual mode, clear selected, or cancel search" },
+  ], run = "escape", desc = "Exit visual mode, clear selected, or cancel search" },
   { on = [
     "l",
-  ], exec = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
+  ], run = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
 ]
