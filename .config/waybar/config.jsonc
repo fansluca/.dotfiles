@@ -82,6 +82,17 @@
     }
   },
 
+  "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": "󱍷",
+      "updated": "󰂪"
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates"
+  },
+
   "hyprland/window": {
     "max-length": 50,
     "format": "{}",
@@ -315,18 +326,6 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     }
-  },
-
-  "custom/updates": {
-    "format": " {}",
-    "tooltip-format": "{}",
-    "escape": true,
-    "return-type": "json",
-    "exec": "~/.config/waybar/scripts/updates.sh",
-    "on-click": "~/.config/waybar/scripts/install_updates.sh",
-    "restart-interval": 60,
-    "single": 8,
-    "tooltip": true
   },
 
   "privacy": {
