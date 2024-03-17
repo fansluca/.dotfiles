@@ -47,6 +47,10 @@ function gr --description "Jump to the git root"
     end
 end
 
+function help
+    $argv --help 2>&1 | bat --plain --language=help
+end
+
 # Pastebin: `command | pb` or `pb < /path/to/file`
 # More usage: https://fars.ee/#examples
 alias pb 'curl -F "c=@-" "https://fars.ee/"'
