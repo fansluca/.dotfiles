@@ -17,6 +17,7 @@
 !/waybar/
 !/wlogout/
 !/yazi/
+!/zellij/
 
 !code-flags.conf
 !chromium-flags.conf
