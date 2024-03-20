@@ -5,13 +5,13 @@
 !/environment.d/
 !/fastfetch/
 !/fish/
-!/fontconfig/
 !/git/
 !/gitui/
 !/hypr/
 !/kitty/
 !/mpv/
 !/rofi/
+!/paru/
 !/swaylock/
 !/tlrc/
 !/waybar/
@@ -21,6 +21,5 @@
 
 !code-flags.conf
 !chromium-flags.conf
-!chrome-flags.conf
 !electron-flags.conf
 !starship.toml
