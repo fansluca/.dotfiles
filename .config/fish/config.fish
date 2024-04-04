@@ -2,9 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     export PATH="$PATH:$HOME/.local/bin"
 
-    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-    man 2 select
-    export MANROFFOPT='-c'
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+    set -x MANROFFOPT -c
 
     starship init fish | source
 
