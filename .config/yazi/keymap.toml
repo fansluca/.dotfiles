@@ -7,5 +7,17 @@ prepend_keymap = [
   ], run = "escape", desc = "Exit visual mode, clear selected, or cancel search" },
   { on = [
     "l",
-  ], run = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
+  ], run = "plugin bypass --args=smart_enter", desc = "Open a file, or recursively enter child directory, skipping children with only a single subdirectory" },
+  { on = [
+    "<Right>",
+  ], run = "plugin bypass --args=smart_enter", desc = "Open a file, or recursively enter child directory, skipping children with only a single subdirectory" },
+  { on = [
+    "T",
+  ], run = "plugin --sync max-preview", desc = "Maximize or restore preview" },
+  { on = [
+    "i",
+  ], run = "plugin searchjump", desc = "searchjump mode" },
+  { on = [
+    "i",
+  ], run = "plugin searchjump --args='autocd'", desc = "searchjump mode(auto cd select folder)" },
 ]

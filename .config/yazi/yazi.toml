@@ -19,7 +19,14 @@ max_height = 1000
 prepend_previewers = [
   { name = NAME
   { mime = "audio/*", run = "exifaudio" },
-  { mime = "text/csv", run = "miller_csv" },
+  { mime = "text/csv", run = "miller" },
+  { mime = "application/x-bittorrent", run = "torrent-preview" },
+  { mime = "application/*zip", run = "ouch" },
+  { mime = "application/x-tar", run = "ouch" },
+  { mime = "application/x-bzip2", run = "ouch" },
+  { mime = "application/x-7z-compressed", run = "ouch" },
+  { mime = "application/x-rar", run = "ouch" },
+  { mime = "application/x-xz", run = "ouch" },
 ]
 append_previewers = [{ mime = "*", run = "hexyl" }]
 

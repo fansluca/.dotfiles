@@ -1,0 +1,14 @@
+[plugin]
+deps = [
+  { use = "Reledia/glow", commit = "536185a" },
+  { use = "Reledia/miller", commit = "75f0002" },
+  { use = "Reledia/hexyl", commit = "64daf93" },
+  { use = "Sonico98/exifaudio", commit = "94329ea" },
+  { use = "ndtoan96/ouch", commit = "694d149" },
+  { use = "kirasok/torrent-preview", commit = "76970b6" },
+  { use = "Rolv-Apneseth/starship", commit = "6197e4c" },
+  { use = "Rolv-Apneseth/bypass", commit = "619500e" }, { use = "yazi-rs/plugins#max-preview", commit = "ab370f0" }, { use = "DreamMaoMao/searchjump", commit = "2dda450" },
+]
+
+[flavor]
+deps = [{ use = "yazi-rs/flavors#catppuccin-macchiato", commit = "55e4bf5" }]
