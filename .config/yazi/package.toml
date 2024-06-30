@@ -7,7 +7,14 @@ deps = [
   { use = "ndtoan96/ouch", commit = "694d149" },
   { use = "kirasok/torrent-preview", commit = "76970b6" },
   { use = "Rolv-Apneseth/starship", commit = "6197e4c" },
-  { use = "Rolv-Apneseth/bypass", commit = "619500e" }, { use = "yazi-rs/plugins#max-preview", commit = "ab370f0" }, { use = "DreamMaoMao/searchjump", commit = "2dda450" },
+  { use = "Rolv-Apneseth/bypass", commit = "619500e" },
+  { use = "DreamMaoMao/searchjump", commit = "74ea21c" },
+  { use = "yazi-rs/plugins#max-preview", commit = "eaa682d" },
+  { use = "yazi-rs/plugins#chmod", commit = "eaa682d" },
+  { use = "yazi-rs/plugins#full-border", commit = "eaa682d" },
+  { use = "yazi-rs/plugins#hide-preview", commit = "eaa682d" },
+  { use = "yazi-rs/plugins#jump-to-char", commit = "eaa682d" },
+  { use = "yazi-rs/plugins#smart-filter", commit = "eaa682d" },
 ]
 
 [flavor]
